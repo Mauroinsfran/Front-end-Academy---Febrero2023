@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CV | Curriculum Vitae</title>
+</head>
+
+<body>
+    <!-- contenedor principal -->
+    <div class="div__contenedor">
+
+        <!--Contenedor para relleno.
+            Se utiliza un div para evitar el uso de position absolute.
+            Sólo es visible es desktop y tablet.-->
+        <div class="div__contenedor--relleno"></div>
+
+        <!--aside para información personal 
+            Sólo es visible es desktop y tablet.-->
+        <aside class="aside__contenedor--informacion">
+            <header>
+                <img class="aside__header--perfil" src="./images/fotodeperfil.png" alt="foto de perfil">
+
+                <div>
+                    <h2>sobre mi</h2>
+                </div>
+
+                <div>
+                    <img src="./images/usuario.png" alt="edad">
+                    <p>48 años</p>
+                </div>
+
+                <div>
+                    <img src="./images/compromiso.png" alt="estado civil">
+                    <p>Casada</p>
+                </div>
+
+                <div>
+                    <img src="./images/localizacion.png" alt="localización">
+                    <p>Ciudad de Guadalajara, Mexico</p>
+                </div>
+
+                <div>
+                    <img src="./images/sombrero-de-graduacion.png" alt="estudios">
+                    <p>Analista en Sistemas</p>
+                </div>
+
+            </header>
+
+            <footer>
+                <div>
+                    <h2>contacto</h2>
+                </div>
+
+                <div>
+                    <img src="./images/correo.png" alt="correo electrónico">
+                    <p>annie.sanders@example.com</p>
+                </div>
+
+                <div>
+                    <img src="./images/whatsapp.png" alt="whatsapp">
+                    <p>(414) 633-2995</p>
+                </div>
+            </footer>
+        </aside>
+
+        <section class="section__contenedor--informacion">
+            <header>
+                <img class="section__header--perfil" src="./images/fotodeperfil.png" alt="foto de perfil">
+
+                <h1>Annie Lijadoras </h1>
+
+            </header>
+
+            <main>
+                <!-- div de perfil para media queries -->
+                <div class="main__contenedor--perfil">
+                    <div>
+                        <h2>sobre mi</h2>
+                    </div>
+
+                    <div>
+                        <img src="./images/usuario.png" alt="edad">
+                        <p>48 años</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/compromiso.png" alt="estado civil">
+                        <p>soltera</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/localizacion.png" alt="localización">
+                        <p>argentina, tucumán</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/sombrero-de-graduacion.png" alt="estudios">
+                        <p>estudiante de programación</p>
+                    </div>
+
+                    <div>
+                        <img src="./images/portafolio.png" alt="trabajo">
+                        <p>asesora de contact center</p>
+                    </div>
+                </div>
+                <!-- div de estudios -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar" src="./images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir" class="ocultar" src="./images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo">estudios</h2>
+                    </div>
+
+                    <div id="estudios" class="section__main--informacion ocultar">
+                        <div class="section__main--subtitulos">
+                            <h3>Universidad de guadalajara</h3>
+
+                            <div>
+                                <h4> Analista de Sistemas</h4>
+                                <p>finalizado</p>
+                            </div>
+
+                            <div>
+                                
+                                <h4>Curso FrontEnd (Nivel Profesional)</h4>
+                                <p>finalizado</p>
+                            </div>
+
+                            <div>
+                                <h4>Curso BackEnd (Nivel Medio)</h4>
+                                <p>Finalizado</p>
+                            </div>
+
+                        </div>
+
+                        <div class="section__main--subtitulos2">
+                            <h3>esc. media pte. juan domingo perón</h3>
+
+                            <div>
+                                <h4>edu. secundaria ~ ciencias naturales</h4>
+                                <p>finalizado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div de experiencia laboral -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar2" src="./images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir2" class="ocultar" src="./images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo2">experiencia laboral</h2>
+                    </div>
+
+                    <div id="experiencia" class="section__main--informacion ocultar">
+                        <div class="section__main--subtitulos">
+                            <h3>coderhouse</h3>
+
+                            <div>
+                                <h4>proyecto real</h4>
+                                <p>maquetado web</p>
+                                <p>finalizado</p>
+                            </div>
+                        </div>
+
+                        <div class="section__main--subtitulos">
+                            <h3>teleperformance</h3>
+
+                            <div>
+                                <h4>asesora de contact center</h4>
+                                <p>at. al cliente - desde 2019</p>
+                                <p>en curso</p>
+                            </div>
+                        </div>
+
+                        <div class="section__main--subtitulos2">
+                            <h3>grido helado</h3>
+
+                            <div>
+                                <h4>cajera</h4>
+                                <p>at. al cliente - 2018/2019</p>
+                                <p>finalizado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- div de conocimientos -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar3" class="ocultar" src="./images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir3" src="./images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo3">conocimientos</h2>
+                    </div>
+
+                    <div id="conocimientos" class="section__main--informacion">
+                        <ul>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>sass</li>
+                            <li>bootstrap</li>
+                            <li>javascript</li>
+                            <li>git & github</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- div de habilidades -->
+                <div>
+                    <div class="section__main--desplegable">
+                        <img id="cerrar4" src="./images/arrow-right.png" alt="señalador abajo">
+                        <img id="abrir4" class="ocultar" src="./images/arrow-bottom.png" alt="señalador derecha">
+                        <h2 id="titulo4">habilidades</h2>
+                    </div>
+
+                    <div id="habilidades" class="section__main--informacion ocultar">
+                        <ul>
+                            <li>comunicación</li>
+                            <li>escucha activa</li>
+                            <li>negociación</li>
+                            <li>adaptación</li>
+                            <li>planificación y gestión del tiempo</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+            <footer>
+
+                <div class="footer__contenedor--contacto">
+                    <div>
+                        <h2>contacto</h2>
+                    </div>
+
+                    <div>
+                        <img src="./images/correo.png" alt="correo electrónico">
+                        <p>annie.sanders@example.com</p>
+                    </div>
+                    
+                    <div>
+                        <img src=".images/whatsapp.png" alt="whatsapp">
+                        <p>(414) 633-2995</p>
+                    </div>
+                  
+                </div>
+            </footer>
+        </section>
+
+        <script src="./js/script.js"></script>
+</body>
+
+</html>

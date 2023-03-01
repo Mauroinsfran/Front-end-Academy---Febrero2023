@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDOR PRINCIPAL */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div__contenedor {
+    display: flex;
+    box-shadow: 6px 5px 12px 1px rgba(37, 52, 57, 0.35);
+}
+
+/* RELLENO */
+
+.div__contenedor--relleno {
+    height: 250px;
+    width: 60px;
+    background-color: #dab79b;
+}
+
+/* ASIDE */
+
+/* general */
+.aside__contenedor--informacion {
+    background-color: #836953;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aside__header--perfil {
+    width: 200px;
+    padding-bottom: 50px;
+    margin-left: 20px;
+}
+
+.aside__contenedor--informacion header div h2,
+.aside__contenedor--informacion footer div h2 {
+    color: #F6F4F1;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.aside__contenedor--informacion header div,
+.aside__contenedor--informacion footer div {
+    display: flex;
+    padding: 10px 0;
+}
+
+.aside__contenedor--informacion header div p,
+.aside__contenedor--informacion footer div a,
+.aside__contenedor--informacion footer div p {
+    color: #F6F4F1;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.aside__contenedor--informacion footer div p {
+    text-transform: none;
+}
+
+.aside__contenedor--informacion header div img,
+.aside__contenedor--informacion footer div img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+/* SECTION */
+.main__contenedor--perfil {
+    display: none;
+}
+
+.ocultar {
+    display: none;
+}
+
+.section__header--perfil {
+    display: none;
+}
+
+.section__contenedor--informacion header {
+    height: 250px;
+    background-color: #dab79b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section__contenedor--informacion header h1 {
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    margin: 10px 50px;
+}
+
+.section__contenedor--informacion header img {
+    width: 250px;
+}
+
+.section__contenedor--informacion header h2 {
+    color: #2e383b;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.section__main--desplegable {
+    display: flex;
+    margin: 40px;
+    cursor: pointer;
+}
+
+.section__main--desplegable img {
+    width: 25px;
+}
+
+.section__main--desplegable h2 {
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.section__main--informacion {
+    margin-left: 90px;
+}
+
+.section__main--subtitulos {
+    padding-bottom: 50px;
+}
+
+.section__main--subtitulos2 {
+    padding-bottom: 5px;
+}
+
+.section__main--informacion div h3 {
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    letter-spacing: 4px;
+    font-size: 21px;
+}
+
+.section__main--informacion div div {
+    margin: 30px 20px;
+}
+
+.section__main--informacion div div h4 {
+    color: #2e383b;
+    text-transform: capitalize;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.section__main--informacion div div p {
+    color: #2e383b;
+    text-transform: capitalize;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    font-size: 19px;
+}
+
+.section__main--informacion ul {
+    margin: 0 0 40px 30px;
+}
+
+.section__main--informacion ul li {
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+
+.section__contenedor--informacion footer {
+    margin: 40px 0 10px 30px;
+}
+
+.section__contenedor--informacion footer h2 {
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #804000;
+    margin-bottom: 10px;
+}
+
+.section__contenedor--informacion footer div {
+    display: flex;
+    align-items: center;
+}
+
+.section__contenedor--informacion footer div img {
+    width: 30px;
+}
+
+.section__contenedor--informacion footer div a {
+    text-decoration: none;
+    color: #2e383b;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.section__contenedor--informacion footer .footer__contenedor--contacto {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1024px) {
+
+    /* RELLENO */
+
+    .div__contenedor--relleno {
+        height: 200px;
+        width: 40px;
+    }
+
+    /* ASIDE */
+
+    /* general */
+    .aside__contenedor--informacion {
+        padding: 10px 20px;
+    }
+
+    .aside__header--perfil {
+        width: 180px;
+        padding-bottom: 20px;
+    }
+
+    .aside__contenedor--informacion header div h2,
+    .aside__contenedor--informacion footer div h2 {
+        font-size: 20px;
+    }
+
+    .aside__contenedor--informacion header div,
+    .aside__contenedor--informacion footer div {
+        padding: 8px;
+    }
+
+    .aside__contenedor--informacion header div p,
+    .aside__contenedor--informacion footer div a,
+    .aside__contenedor--informacion footer div p {
+        font-size: 15px;
+    }
+
+    .aside__contenedor--informacion header div img,
+    .aside__contenedor--informacion footer div img {
+        width: 20px;
+    }
+
+    /* SECTION */
+
+    .section__contenedor--informacion header {
+        height: 200px;
+    }
+
+    .section__contenedor--informacion header h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .section__contenedor--informacion header img {
+        width: 150px;
+    }
+
+    .section__contenedor--informacion header h2 {
+        font-size: 15px;
+    }
+
+    .section__main--desplegable {
+        margin: 30px;
+    }
+
+    .section__main--desplegable h2 {
+        letter-spacing: 3px;
+        font-size: 20px;
+        padding-left: 12px;
+    }
+
+    .section__main--informacion {
+        margin-left: 80px;
+    }
+
+    .section__main--subtitulos {
+        padding-bottom: 40px;
+    }
+
+    .section__main--informacion div h3 {
+        letter-spacing: 2.5px;
+        font-size: 16px;
+    }
+
+    .section__main--informacion div div {
+        margin: 20px 10px;
+    }
+
+    .section__main--informacion div div h4 {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .section__main--informacion div div p {
+        font-size: 15px;
+    }
+
+    .section__main--informacion ul {
+        margin: 0 0 40px 20px;
+    }
+
+    .section__main--informacion ul li {
+        letter-spacing: 2.5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .div__contenedor--relleno {
+        display: none;
+    }
+
+    .aside__contenedor--informacion {
+        display: none;
+    }
+
+    .section__header--perfil {
+        display: flex;
+    }
+
+    .section__contenedor--informacion header {
+        height: 317px;
+    }
+
+    .section__contenedor--informacion header h1 {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .main__contenedor--perfil {
+        display: block;
+    }
+
+    .section__contenedor--informacion main .main__contenedor--perfil {
+        background-color: #253439;
+        padding: 10px 0 1px 0;
+    }
+
+    .section__contenedor--informacion main .main__contenedor--perfil div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .section__contenedor--informacion main .main__contenedor--perfil div h2 {
+        color: #F6F4F1;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .section__contenedor--informacion main .main__contenedor--perfil div p,
+    .section__contenedor--informacion main .main__contenedor--perfil div a {
+        color: #F6F4F1;
+        text-transform: capitalize;
+        font-family: 'Lora', serif;
+        font-size: 15px;
+    }
+
+    .section__contenedor--informacion main .main__contenedor--perfil div img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .section__main--desplegable {
+        margin-top: 40px;
+    }
+
+    .section__main--desplegable img {
+        width: 20px;
+    }
+
+    .section__main--desplegable h2 {
+        letter-spacing: 1px;
+    }
+
+    .section__main--informacion {
+        margin-left: 60px;
+    }
+
+    .section__main--subtitulos {
+        padding-bottom: 30px;
+    }
+
+    .section__main--subtitulos2 {
+        padding-bottom: 5px;
+    }
+
+    .section__main--informacion div h3 {
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    .section__main--informacion div div {
+        margin: 20px 10px;
+    }
+
+    .section__main--informacion div div h4 {
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .section__main--informacion div div p {
+        letter-spacing: 0.5px;
+        font-size: 14px;
+    }
+
+    .section__main--informacion ul {
+        margin: 0 0 40px 20px;
+    }
+
+    .section__main--informacion ul li {
+        letter-spacing: 0.5px;
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .section__contenedor--informacion footer {
+        margin: 50px 0 0 0;
+    }
+
+    .section__contenedor--informacion footer h2 {
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .section__contenedor--informacion footer div img {
+        width: 25px;
+    }
+
+    .section__contenedor--informacion footer div a {
+        letter-spacing: 1.5px;
+        padding: 10px;
+    }
+
+    .section__contenedor--informacion footer .footer__contenedor--contacto {
+        background-color: #253439;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section__contenedor--informacion footer .footer__contenedor--contacto div h2 {
+        color: #F6F4F1;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .section__contenedor--informacion footer .footer__contenedor--contacto div p,
+    .section__contenedor--informacion footer .footer__contenedor--contacto div a {
+        color: #F6F4F1;
+        text-transform: capitalize;
+        font-family: 'Lora', serif;
+        font-size: 13px;
+    }
+
+    .section__contenedor--informacion footer .footer__contenedor--contacto div img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .section__contenedor--informacion footer .div__link--margin {
+        margin-left: 20px;
+    }
+}
